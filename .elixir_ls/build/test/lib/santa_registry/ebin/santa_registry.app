@@ -1,0 +1,13 @@
+{application,santa_registry,
+             [{applications,[kernel,stdlib,elixir,logger,prometheus_ex,timex,
+                             prometheus_plugs,plug_cowboy]},
+              {description,"santa_registry"},
+              {modules,['Elixir.Metrics.FibonacciInstrumenter',
+                        'Elixir.Metrics.SantasInstrumenter',
+                        'Elixir.PrometheusExporter','Elixir.Santa',
+                        'Elixir.Santa.Fibonacci','Elixir.Santa.SantaApi',
+                        'Elixir.Santa.SantaServer',
+                        'Elixir.Santa.SantaSupervisor','Elixir.SantaApp']},
+              {registered,[]},
+              {vsn,"0.1.0"},
+              {mod,{'Elixir.SantaApp',[]}}]}.
